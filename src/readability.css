@@ -1,0 +1,311 @@
+/* Layout and component sizing for the shared, readable type scale. */
+/* Imported after index.css by main.tsx so these refinements win the cascade. */
+.utility-bar {
+  height: 38px;
+}
+.brand-wordmark,
+.brand-light .brand-wordmark,
+.footer-main .brand-wordmark {
+  font-size: 1.0625rem;
+}
+.desktop-nav .nav-link,
+.contact-button,
+.btn-navy,
+.btn-copper,
+.hero-partner,
+.text-link,
+.load-more[data-slot] {
+  font-size: var(--text-control);
+}
+.btn-navy,
+.btn-copper,
+.load-more[data-slot] {
+  min-height: 52px;
+  height: auto;
+  padding-block: 14px;
+}
+.contact-button {
+  min-height: 46px;
+  height: auto;
+}
+.hero-copy > p {
+  max-width: 470px;
+  font-size: var(--text-lead);
+  line-height: 1.65;
+}
+.hero-photo-label {
+  right: 75px;
+}
+.hero-actions {
+  flex-wrap: wrap;
+}
+.intro-copy p,
+.section-heading-aside p,
+.create-copy > p,
+.strategy-card > p,
+.process-tab-content p,
+.archive-card > p,
+.contact-intro > p,
+.contact-details p,
+.contact-form-panel > p,
+.prose,
+.legal-copy,
+.team-dialog-copy [data-slot="dialog-description"] {
+  font-size: var(--text-body);
+}
+.section-heading-aside {
+  width: 390px;
+}
+.create-copy > p {
+  max-width: 460px;
+}
+.strategy-card h3,
+.archive-card h2,
+.insight-info h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.strategy-card {
+  min-width: 0;
+}
+.archive-card-meta {
+  flex-wrap: wrap;
+}
+.process-tab-list [data-slot="tabs-trigger"],
+.lab-page-tab-list [data-slot="tabs-trigger"] {
+  font-size: var(--text-control);
+  white-space: normal;
+  text-align: left;
+}
+.process-tab-list [data-slot="tabs-trigger"] > svg,
+.lab-page-tab-list [data-slot="tabs-trigger"] > svg {
+  flex-shrink: 0;
+}
+.archive-controls {
+  flex-wrap: wrap;
+}
+.archive-tabs[data-slot] {
+  height: auto;
+  flex-wrap: wrap;
+}
+.archive-tabs [data-slot="tabs-trigger"] {
+  min-height: 46px;
+  white-space: normal;
+}
+.archive-search {
+  width: 300px;
+}
+.archive-search input {
+  height: 48px;
+  font-size: var(--text-control);
+}
+.archive-search > svg,
+.archive-search > button {
+  top: 16px;
+}
+.archive-toolbar {
+  gap: 20px;
+}
+.archive-toolbar select {
+  min-height: 44px;
+}
+.article-body {
+  font-size: var(--text-lead);
+  line-height: 1.8;
+}
+.contact-form-panel input,
+.contact-form-panel textarea {
+  font-size: var(--text-body);
+}
+.contact-form-panel input {
+  min-height: 50px;
+}
+.contact-form-panel label,
+.dialog-actions [data-slot="button"] {
+  font-size: var(--text-control);
+}
+.form-bottom .btn-navy,
+.connect-band .btn-navy {
+  height: auto;
+  min-height: 52px;
+  font-size: var(--text-control);
+}
+.form-bottom > span {
+  max-width: 180px;
+}
+.footer-main {
+  grid-template-columns: 1.4fr 0.85fr 0.85fr 1.3fr;
+  gap: 36px;
+}
+.footer-main > div {
+  min-width: 0;
+}
+.footer-main .brand {
+  flex-wrap: wrap;
+}
+.footer-bottom {
+  flex-wrap: wrap;
+}
+.team-dialog[data-slot] {
+  max-width: 920px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.disclaimer-dialog[data-slot],
+.enquiry-dialog[data-slot] {
+  max-width: 780px;
+}
+[data-slot="dialog-close"],
+[data-slot="sheet-content"] > button:last-child {
+  min-width: 40px;
+  min-height: 40px;
+}
+@media (min-width: 1600px) {
+  :root {
+    --text-caption: 0.9375rem;
+    --text-small: 1rem;
+    --text-control: 1.125rem;
+    --text-body: 1.25rem;
+    --text-lead: 1.375rem;
+  }
+  .hero-copy {
+    max-width: 700px;
+  }
+  .hero-copy > p {
+    max-width: 540px;
+  }
+}
+@media (max-width: 1199px) {
+  .desktop-nav,
+  .contact-button[data-slot] {
+    display: none;
+  }
+  .mobile-menu-button[data-slot] {
+    display: flex;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 900px) {
+  .section-heading {
+    flex-wrap: wrap;
+  }
+  .section-heading-aside {
+    width: 100%;
+    max-width: 550px;
+  }
+  .strategy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .footer-main {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 32px;
+  }
+}
+@media (max-width: 680px) {
+  :root {
+    --text-caption: 0.8125rem;
+    --text-small: 0.875rem;
+    --text-body: 1rem;
+    --text-lead: 1.125rem;
+  }
+  .brand-wordmark,
+  .brand-light .brand-wordmark,
+  .footer-main .brand-wordmark,
+  .mobile-sheet .brand-wordmark {
+    font-size: 1rem;
+  }
+  .utility-inner > span {
+    display: none;
+  }
+  .utility-bar {
+    height: 34px;
+  }
+  .hero-copy > p {
+    max-width: 100%;
+  }
+  .hero-actions .btn-copper {
+    height: auto;
+    min-height: 50px;
+    font-size: var(--text-control);
+  }
+  .hero-bottom > a {
+    line-height: 1.5;
+  }
+  .strategy-grid,
+  .strategy-grid.strategy-grid-compact {
+    grid-template-columns: 1fr;
+  }
+  .strategy-card h3,
+  .strategy-grid:not(.strategy-grid-compact) .strategy-card h3,
+  .archive-card h2,
+  .insight-info h3 {
+    font-size: 1.375rem;
+  }
+  .strategy-grid:not(.strategy-grid-compact) .strategy-card > p {
+    font-size: var(--text-body);
+  }
+  .strategy-card-bottom,
+  .strategy-grid:not(.strategy-grid-compact) .strategy-card-bottom {
+    font-size: var(--text-small);
+  }
+  .process-tab-list [data-slot="tabs-trigger"] {
+    gap: 9px;
+    padding-inline: 12px;
+  }
+  .lab-page-tab-list[data-slot] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lab-page-tab-list [data-slot="tabs-trigger"] {
+    padding: 16px 12px;
+    gap: 10px;
+  }
+  .archive-tabs [data-slot="tabs-trigger"] {
+    font-size: var(--text-small);
+  }
+  .archive-toolbar {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .archive-toolbar > div {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .archive-toolbar select {
+    max-width: 170px;
+  }
+  .archive-search {
+    width: 100%;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .form-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-bottom > span {
+    max-width: none;
+    order: 2;
+    font-size: var(--text-small);
+  }
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+  }
+  .footer-bottom > div {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 22px;
+    row-gap: 14px;
+  }
+  .team-dialog[data-slot] {
+    max-width: calc(100% - 32px);
+  }
+  .disclaimer-dialog[data-slot],
+  .enquiry-dialog[data-slot] {
+    max-width: calc(100% - 30px);
+  }
+}

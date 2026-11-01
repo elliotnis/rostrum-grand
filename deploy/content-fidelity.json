@@ -1,0 +1,134 @@
+{
+  "source": "https://rostrumgrand.com/",
+  "original_font_families": {
+    "headings": "Cormorant Garamond",
+    "paragraphs": "Lato",
+    "navigation": "Crimson Text"
+  },
+  "original_palette": {
+    "background": "#13202f",
+    "header": "#1d3045",
+    "cards": "#222f41",
+    "gold": "#ae862e",
+    "body": "#f4f7dc"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "source_heading_count": 7,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/rg-lab",
+      "source_heading_count": 7,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/about-us",
+      "source_heading_count": 20,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe",
+      "source_heading_count": 1,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/philanthropy",
+      "source_heading_count": 3,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/contact-us",
+      "source_heading_count": 2,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/asset-based-finance",
+      "source_heading_count": 5,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/fixed-income-credit",
+      "source_heading_count": 8,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/private-equity",
+      "source_heading_count": 5,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/quantitative",
+      "source_heading_count": 1,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/real-assets",
+      "source_heading_count": 2,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "path": "/investment-universe/regional-thematic",
+      "source_heading_count": 1,
+      "source_headings_preserved": true,
+      "phone_width": 390,
+      "horizontal_overflow": false
+    }
+  ],
+  "source_headings_preserved": 62,
+  "articles": 570,
+  "article_ids_match_source": true,
+  "em_dashes_in_article_text": 0,
+  "restored_source_descriptions": [
+    "Fixed-income arbitrage",
+    "Asset-backed security (ABS)"
+  ],
+  "original_partners_placeholder": "Hidden, as on the source website; no partner names or logos were supplied.",
+  "verified_at": "2026-10-31T15:56:57.839851+00:00",
+  "deployed_revision": "rostrum-grand-00008-g8t",
+  "public_brand_verified": true,
+  "design": "The developed modern layouts with a continuous navy page canvas matching the original image backgrounds, cream text, gold accents, rounded cards and responsive layouts.",
+  "checked_viewport_widths": [
+    320,
+    390,
+    900,
+    1280,
+    1920
+  ],
+  "archive_mobile_layout_verified": true,
+  "design_palette": {
+    "navy": "#13202f",
+    "secondary_navy": "#1d3045",
+    "dark_cards": "#222f41",
+    "gold": "#ae862e",
+    "light_gold": "#d0ae64",
+    "light_surface": null,
+    "background": "#13202f",
+    "raised_surface": "#1d3045",
+    "text": "#f4f7dc",
+    "paragraphs": "#c7d1db"
+  }
+}

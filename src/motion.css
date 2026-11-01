@@ -1,0 +1,144 @@
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-quick: 180ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rg-enter {
+    from {
+      opacity: 0;
+      translate: 0 12px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes rg-photo-enter {
+    from {
+      opacity: 0.72;
+      scale: 1.015;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  @keyframes rg-panel-enter {
+    from {
+      opacity: 0;
+      translate: 0 5px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  .home-hero[data-motion-enter] .hero-copy > .eyebrow {
+    animation: rg-enter 380ms var(--motion-ease) both;
+  }
+  .home-hero[data-motion-enter] .hero-copy > h1 {
+    animation: rg-enter 560ms var(--motion-ease) 40ms both;
+  }
+  .home-hero[data-motion-enter] .hero-copy > p {
+    animation: rg-enter 480ms var(--motion-ease) 100ms both;
+  }
+  .home-hero[data-motion-enter] .hero-actions {
+    animation: rg-enter 420ms var(--motion-ease) 150ms both;
+  }
+  .home-hero[data-motion-enter] .hero-photo > img {
+    animation: rg-photo-enter 800ms var(--motion-ease) both;
+  }
+  .home-hero[data-motion-enter] .perspective-frame,
+  .home-hero[data-motion-enter] .hero-photo-label {
+    animation: rg-enter 600ms var(--motion-ease) 100ms both;
+  }
+
+  .page-hero[data-motion-enter] .page-hero-copy > *,
+  .article-header[data-motion-enter] h1,
+  .article-header[data-motion-enter] .article-meta,
+  .contact-page[data-motion-enter] .contact-intro > .eyebrow,
+  .contact-page[data-motion-enter] .contact-intro > h1,
+  .contact-page[data-motion-enter] .contact-intro > p {
+    animation: rg-enter 460ms var(--motion-ease) both;
+  }
+  .page-hero[data-motion-enter] .page-hero-copy > :nth-child(2),
+  .contact-page[data-motion-enter] .contact-intro > h1 {
+    animation-delay: 40ms;
+  }
+  .page-hero[data-motion-enter] .page-hero-copy > :nth-child(n + 3),
+  .contact-page[data-motion-enter] .contact-intro > p {
+    animation-delay: 90ms;
+  }
+  .home-hero[data-motion-enter] .hero-actions:focus-within,
+  .page-hero[data-motion-enter] .page-hero-copy:focus-within > * {
+    animation: none;
+  }
+
+  .page-hero[data-motion-enter] .page-hero-photo > img {
+    animation: rg-photo-enter 600ms var(--motion-ease) both;
+  }
+
+  .process-tab-content[data-state="active"],
+  .lab-page-tabs [data-slot="tabs-content"][data-state="active"] {
+    animation: rg-panel-enter 260ms var(--motion-ease) both;
+  }
+  .process-tab-list [data-slot="tabs-trigger"],
+  .lab-page-tab-list [data-slot="tabs-trigger"],
+  .archive-tabs [data-slot="tabs-trigger"] {
+    transition:
+      background-color var(--motion-quick),
+      color var(--motion-quick);
+  }
+  .investment-dropdown[data-slot] {
+    animation-duration: 180ms;
+  }
+  [data-slot="sheet-content"] {
+    animation-duration: 260ms;
+  }
+  [data-slot="dialog-overlay"] {
+    animation-duration: 160ms;
+  }
+  [data-slot="dialog-content"] {
+    animation-duration: 200ms;
+  }
+
+  .btn-navy svg,
+  .btn-copper svg,
+  .contact-button svg {
+    transition: transform var(--motion-quick) var(--motion-ease);
+  }
+  .btn-navy:hover svg,
+  .btn-copper:hover svg,
+  .contact-button:hover svg {
+    transform: translate(2px, -2px);
+  }
+  .btn-navy:active,
+  .btn-copper:active,
+  .contact-button:active {
+    transform: translateY(1px);
+  }
+  .archive-card {
+    transition:
+      border-color 200ms,
+      background-color 200ms,
+      transform 250ms var(--motion-ease);
+  }
+  .archive-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .strategy-card:hover,
+  .archive-card:hover,
+  .insight-card:hover .insight-image > img,
+  .team-card:hover .team-photo > img,
+  .text-link:hover svg {
+    transform: none;
+  }
+}

@@ -1,0 +1,195 @@
+/* Match the page canvas to the navy behind the original artwork. */
+:root {
+  color-scheme: dark;
+  color: #f4f7dc;
+  background: #13202f;
+  --ink: #f4f7dc;
+  --body: #c7d1db;
+  --cream: #13202f;
+  --surface: #1d3045;
+  --line: #34465c;
+  --background: #13202f;
+  --foreground: #f4f7dc;
+  --primary: #d0ae64;
+  --primary-foreground: #13202f;
+  --secondary: #1d3045;
+  --secondary-foreground: #f4f7dc;
+  --muted: #1d3045;
+  --muted-foreground: #afbed0;
+  --accent: #263d56;
+  --accent-foreground: #f4f7dc;
+  --border: #34465c;
+  --input: #536a84;
+}
+
+body,
+.site-header,
+.site-footer,
+.home-intro,
+.section-surface,
+.page-hero,
+.lab-section,
+.create-section,
+.connection-section,
+.universe-section,
+.insights-section,
+.related-section,
+.article-header,
+.contact-page {
+  background: var(--navy);
+  color: var(--ink);
+}
+.site-header, .page-hero, .insights-section, .site-footer,
+.article-byline, .footer-bottom { border-color: var(--line); }
+.site-footer { border-top: 1px solid var(--line); }
+.brand { background: transparent; }
+.brand-art, .page-hero-photo { background: var(--navy); }
+
+/* Navigation and controls retain the original gold accent. */
+.desktop-nav .nav-link,
+.mobile-menu-button[data-slot] { color: var(--ink); }
+.desktop-nav .nav-link:hover,
+.desktop-nav .nav-link.active,
+.desktop-nav .nav-active,
+.eyebrow,
+.heading-subtitle,
+.text-link,
+.back-link,
+.source-link { color: var(--gold-light); }
+.text-link:hover { color: white; }
+.btn-gold, .btn-copper, .btn-navy, .contact-button {
+  background: var(--gold-light);
+  color: var(--navy);
+}
+.btn-gold:hover, .btn-copper:hover, .btn-navy:hover, .contact-button:hover {
+  background: #dfc58d;
+  color: var(--navy);
+}
+.btn-outline, .load-more[data-slot] {
+  background: transparent;
+  border: 1px solid var(--gold-light);
+  color: var(--gold-light);
+}
+.btn-outline:hover, .load-more[data-slot]:hover {
+  background: var(--surface);
+  color: var(--ink);
+}
+.investment-dropdown[data-slot], .mobile-sheet[data-slot] {
+  background: var(--navy);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.dropdown-intro, .lab-jump-nav { background: var(--surface); }
+.dropdown-links a:hover, .lab-jump-nav > a:hover {
+  background: var(--accent);
+  color: var(--gold-light);
+}
+.mobile-strategies { color: var(--body); }
+.skip-link { background: var(--gold-light); color: var(--navy); }
+
+/* Raised surfaces distinguish cards without introducing light panels. */
+.strategy-card,
+.insight-card,
+.archive-card,
+.values-grid > article,
+.team-card,
+.related-grid > a,
+.contact-form-panel,
+.connection-diagram,
+[data-slot="accordion-item"] {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.strategy-card:hover, .archive-card:hover {
+  background: #243b53;
+  border-color: var(--gold-light);
+}
+.archive-card-featured {
+  background: var(--navy);
+  border-color: #927943;
+}
+.archive-card-featured:hover { background: var(--surface); }
+.strategy-card-bottom, .archive-card-footer { color: var(--ink); border-color: var(--line); }
+.strategy-card-bottom svg, .archive-card-footer > svg { color: var(--gold-light); }
+.lab-pillar-grid > div { background: var(--navy); }
+.values-grid img, .editorial-accordion-trigger > span > img {
+  background: transparent;
+  padding: 0;
+}
+.team-photo > span { color: var(--navy); }
+.team-dialog-role { color: var(--gold-light); }
+.team-dialog-photo { background: var(--navy); }
+
+/* Keep illustrations in the same navy, blue and gold palette as the page. */
+.investment-illustration { background: var(--navy); border-color: var(--line); }
+.investment-illustration svg { stroke: #b5c8df; }
+.illustration-grid { stroke: #344b64; }
+.illustration-wash { fill: #263e56; }
+.illustration-paper { fill: #1a2d43; }
+.illustration-accent { fill: var(--gold-light); stroke: #e0c48c; }
+.illustration-dot { fill: #3c5b7c; stroke: #a5bdd9; }
+.illustration-signal { stroke: var(--gold-light); }
+.connection-diagram figcaption,
+.connection-party > span,
+.connection-distribution { color: var(--body); border-color: var(--line); }
+.connection-rg { background: var(--navy); border-color: #927943; }
+.connection-party > svg, .connection-arrow, .connection-distribution svg {
+  color: var(--gold-light);
+}
+
+/* Supporting text, article content and filters need the same contrast. */
+.insight-info > time,
+.archive-card-meta > time,
+.archive-card > p,
+.archive-card-featured > p,
+.archive-toolbar,
+.archive-pagination > p,
+.article-meta time,
+.article-byline,
+.small-note { color: var(--muted-foreground); }
+.category-tag, .archive-card-featured .category-tag {
+  background: var(--navy);
+  color: var(--gold-light);
+}
+.insight-image > span { background: var(--navy); color: var(--ink); }
+.archive-tabs [data-slot="tabs-trigger"] { color: var(--body); }
+.archive-tabs [data-slot="tabs-trigger"][data-state="active"] {
+  background: var(--gold-light);
+  color: var(--navy);
+}
+.archive-toolbar select { color: var(--ink); background: var(--surface); }
+.article-body, .article-body strong { color: var(--body); }
+.article-body h2, .article-body h3, .article-body h4, .article-body h5 {
+  color: var(--ink);
+}
+.article-body a, .legal-page a:not(.text-link),
+.strategy-sidebar > a.selected, .strategy-sidebar > a:hover { color: var(--gold-light); }
+
+/* Forms and dialogs remain readable throughout the darker theme. */
+.contact-form-panel label, .enquiry-preview > p { color: var(--body); }
+.contact-form-panel label > span { color: var(--gold-light); }
+.contact-details > a { border-color: var(--line); }
+.contact-details svg { color: var(--gold-light); }
+.archive-search input,
+.contact-form-panel input,
+.contact-form-panel textarea {
+  background: var(--navy);
+  color: var(--ink);
+  border-color: var(--input);
+}
+.archive-search input::placeholder,
+.contact-form-panel input::placeholder,
+.contact-form-panel textarea::placeholder { color: var(--muted-foreground); }
+.form-bottom > span { color: var(--muted-foreground); }
+[data-slot="dialog-content"] {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.enquiry-preview, .notice-text { background: var(--navy); }
+.enquiry-preview > span { color: var(--gold-light); }
+[data-slot="dialog-close"], [data-slot="sheet-content"] > button:last-child {
+  background: #29425d;
+  color: var(--ink);
+}

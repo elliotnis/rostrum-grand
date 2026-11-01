@@ -1,0 +1,113 @@
+{
+  "service": "rostrum-grand",
+  "project": "finance-department-494117",
+  "region": "asia-east2",
+  "url": "https://rostrum-grand-46003867652.asia-east2.run.app",
+  "console_url": "https://console.cloud.google.com/run/detail/asia-east2/rostrum-grand/metrics?project=finance-department-494117",
+  "revision": "rostrum-grand-00008-g8t",
+  "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:50636e79375c012e2f5ad0d244aae0adf5551eaed173b2faf3c1f6f3fcaf2613",
+  "traffic_percent": 100,
+  "runtime": {
+    "cpu": 1,
+    "memory": "256Mi",
+    "min_instances": 0,
+    "max_instances": 2,
+    "concurrency": 80,
+    "port": 8080,
+    "health_path": "/health"
+  },
+  "verified_at": "2026-10-31T15:56:57.839851+00:00",
+  "verification": {
+    "build": "passed",
+    "lint": {
+      "errors": 0,
+      "existing_warnings": 6
+    },
+    "source_headings_preserved": 62,
+    "content_pages_checked": 13,
+    "archive_articles": 570,
+    "deployed_assets_match_verified_build": [
+      "/assets/brand-fonts-20261031.css",
+      "/assets/index-CT6UAI0V.js",
+      "/assets/index-C2YSyWdv.css"
+    ],
+    "original_font_files_verified": 5,
+    "checked_viewport_widths": [
+      320,
+      390,
+      900,
+      1280,
+      1920
+    ],
+    "browser_checks": [
+      "page, section and original artwork backgrounds match #13202f on GCP",
+      "original fonts, headings, content and article archive retained",
+      "13 main pages checked at 390px with no overflow, broken images or low contrast in sampled text",
+      "small phone, tablet and wide desktop checks at 320px, 900px and 1920px",
+      "navigation drawer and investment dropdown use matching navy backgrounds",
+      "contact fields and enquiry preview remain readable in the darker theme",
+      "archive search and full article reading work",
+      "original Cormorant Garamond, Lato and Crimson Text fonts retained",
+      "D3M and Design cards retain matching navy backgrounds and readable blue icons",
+      "no browser console errors or warnings in tested journeys"
+    ],
+    "latest_change": {
+      "description": "RG Lab description aligned directly beneath ADDDing value, with About us alongside on desktop and below on phones.",
+      "checked_viewport_widths": [
+        390,
+        1280,
+        1920
+      ],
+      "original_copy_unchanged": true,
+      "public_desktop_and_phone_verified": true
+    }
+  },
+  "scope": {
+    "content": "Saved source snapshot from 2026-10-30",
+    "enquiries": "Prepares email draft; no mail backend",
+    "custom_domain": null,
+    "copy": "Original page names, headings, subtitles, body copy and section order restored. Em dashes replaced with ordinary punctuation.",
+    "visuals": "Original illustrations blend into the matching navy page canvas. Architectural photography, investment illustrations, portraits and relationship diagram retained.",
+    "brand": {
+      "navy": "#13202f",
+      "gold": "#ae862e",
+      "headings": "Cormorant Garamond",
+      "paragraphs": "Lato",
+      "navigation": "Crimson Text",
+      "card_radius_px": 24
+    },
+    "design": "The developed modern layouts with a continuous navy page canvas matching the original image backgrounds, cream text, gold accents, rounded cards and responsive layouts."
+  },
+  "previous_deployments": [
+    {
+      "revision": "rostrum-grand-00002-lfh",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:bee65e7d91e6b9e867c571b46194309c3df264d089da46836fa48d8ed286482e",
+      "verified_at": "2026-10-30T11:52:56.174232+00:00"
+    },
+    {
+      "revision": "rostrum-grand-00003-m4p",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:96655afa0c17828e08840d09b5c86df53bbf24412ace8ec8fb6ee3e4ece0de54",
+      "verified_at": "2026-10-30T15:18:59.245319+00:00"
+    },
+    {
+      "revision": "rostrum-grand-00004-92z",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:066ce318b9b54003231a4ec0a01de1918cc8d84f183ddca6c82ef25b87a2346d",
+      "verified_at": "2026-10-30T15:36:15.305911+00:00"
+    },
+    {
+      "revision": "rostrum-grand-00005-skj",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:2452e0749e289ad15d2f3e7f8f07bf53a41dfdbb1db936234f1881b6241ce5e4",
+      "verified_at": "2026-10-31T07:36:50.977831+00:00"
+    },
+    {
+      "revision": "rostrum-grand-00006-lkg",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:d5c1412630f40d3226c4ea1c8d0f75c128fb881c75d4b4849777a81b7cbf6475",
+      "verified_at": "2026-10-31T12:01:04.914651+00:00"
+    },
+    {
+      "revision": "rostrum-grand-00007-z76",
+      "image": "asia-east2-docker.pkg.dev/finance-department-494117/cloud-run-source-deploy/rostrum-grand@sha256:07c714676a5f30a3dd8331ac3218913579bfc476074456692fa0a4176adc6f6f",
+      "verified_at": "2026-10-31T13:44:58.288102+00:00"
+    }
+  ]
+}
